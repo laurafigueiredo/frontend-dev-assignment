@@ -3,3 +3,19 @@
     background-color: transparent;
     cursor: pointer;
 }
+
+.Button[type=submit] {
+    background-image: url('../../static/search.svg');
+    background-size: 2.4rem;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.Button[type=reset] {
+    background-image: url('../../static/close.svg');
+    background-size: 2.1rem;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}

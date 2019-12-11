@@ -6,11 +6,18 @@
 .Search-button {
     width: 3.5rem;
     height: calc(100% - 4px);
-    background-image: url('../../static/search.svg');
-    background-size: 2.4rem;
-    background-repeat: no-repeat;
     position: absolute;
     top: 50%;
     right: 0;
     transform: translateY(-50%);
+}
+
+.Search-button--reset {
+    right: 3.5rem;
+}
+
+.is-invisible {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;;
 }

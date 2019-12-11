@@ -9,6 +9,8 @@ export const Input = ({
     placeholder,
     theme,
     onChange,
+    onFocus,
+    onBlur,
     name,
     value,
 }) => (
@@ -17,6 +19,8 @@ export const Input = ({
         className={ !!theme ? `Input ${theme}` : 'Input' }
         placeholder={ placeholder }
         onChange={ onChange }
+        onFocus={ onFocus }
+        onBlur={ onBlur }
         value={ value }
         name={ name }
         id={ name }
@@ -27,7 +31,9 @@ Input.propTypes = {
     type: PropTypes.string,
     placeholder: PropTypes.string,
     theme: PropTypes.string,
-    onChange: PropTypes.any,
+    onChange: PropTypes.func,
+    onFocus: PropTypes.func,
+    onBlur: PropTypes.func,
     name: PropTypes.string,
     value: PropTypes.string,
 };

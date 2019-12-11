@@ -8,12 +8,14 @@ export const Button = ({
     children,
     type = 'button',
     theme,
+    onClick = () => {},
 }) => {
     return (
         <button
             className={ !!theme ? `Button ${theme}` : 'Button' }
-            type={ type }>
-            { children }
+            type={ type }
+            onClick={ onClick }>
+            { !!children && children }
         </button>
     );
 }
@@ -24,5 +26,6 @@ Button.propTypes = {
         PropTypes.string,
         PropTypes.node
     ]),
+    onClick: PropTypes.func,
     theme: PropTypes.string,
 };
