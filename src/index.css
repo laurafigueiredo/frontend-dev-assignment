@@ -1,5 +1,33 @@
+:root {
+  --grey-dark: #323C52;
+  --grey-medium: #ADB1BA;
+  --grey-light: #D6D8DC;
+  --black: #000;
+}
+
+html {
+  font-size: 10px;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+}
+
+.Wrapper {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.sr-only {
+  border: 0; 
+  clip: rect(0 0 0 0); 
+  height: 1px; 
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }

@@ -1,0 +1,12 @@
+.Input {
+    padding: 9px 35px 9px 9px;
+    border: none;
+    box-shadow: inset 0 0 0 2px var(--grey-light);
+    background-color: transparent;
+    color: var(--black);
+    font-size: 1.1rem;
+}
+
+.Input::placeholder {
+    color: var(--grey-medium);
+}
