@@ -1,3 +1,20 @@
+# Developer notes
+
+This project contains accessability for the search input and autocomplete list.
+
+Tech:
+* Used React (classes) with proptypes
+* CSS for styling (with css variables)
+* Jest with Enzyme for unit test
+
+Folder arquitecture:
+* src folder with:
+    * Components folder
+    * Services folder
+    * Static folder
+    * Utils folder
+
+
 ## de Bijenkorf Frontend Dev assignment
 
 This project allows de Bijenkorf to assess potential frontend candidates with real, working code.

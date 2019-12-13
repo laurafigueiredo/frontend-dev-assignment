@@ -1,0 +1,42 @@
+.AutocompleteList {
+    position: absolute;
+    list-style: none;
+    margin: 0;
+    opacity: 0;
+    padding: 0;
+    width: 100%;
+    visibility: hidden;
+    transform: translateY(1rem);
+    transition-property: opacity, visibility, transform;
+    transition-duration: 250ms;
+}
+
+.AutocompleteList.is-active {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}
+
+.AutocompleteList-item {
+    border-left: 1px solid var(--grey-light, #D6D8DC);
+    border-right: 1px solid var(--grey-light, #D6D8DC);
+    border-bottom: 1px solid var(--grey-light, #D6D8DC);
+    font-weight: var(--font-weight-bold, 900);
+    background-color: transparent;
+    padding: 1rem 2rem;
+    transition: background-color 250ms;
+    cursor: pointer;
+}
+
+.AutocompleteList-item[aria-selected="true"],
+.AutocompleteList-item:hover{
+    background-color: var(--grey-light, #D6D8DC);
+}
+
+.AutocompleteList-label {
+    display: none;
+}
+
+.AutocompleteList-results {
+    font-weight: var(--font-weight-regular, 400);
+}

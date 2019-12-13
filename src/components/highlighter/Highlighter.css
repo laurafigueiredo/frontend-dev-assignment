@@ -1,0 +1,4 @@
+.Highlighter {
+    font-weight: var(--font-weight-regular, 400);
+    color: var(--grey-dark, #323C52);
+}

@@ -1,16 +1,16 @@
 .Input {
     padding: 9px 35px 9px 9px;
-    border: 2px solid var(--grey-light);
+    border: 2px solid var(--grey-light, #D6D8DC);
     background-color: transparent;
-    color: var(--black);
+    color: var(--black, #000);
     font-size: 1.1rem;
     outline-offset: 2px;
 }
 
 .Input::placeholder {
-    color: var(--grey-medium);
+    color: var(--grey-medium, #ADB1BA);
 }
 
-.is-active Input {
-    border-color: var(--grey-medium);
+.is-active .Input {
+    border-color: var(--grey-medium, #ADB1BA);
 }

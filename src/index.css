@@ -3,6 +3,9 @@
   --grey-medium: #ADB1BA;
   --grey-light: #D6D8DC;
   --black: #000;
+
+  --font-weight-bold: 900;
+  --font-weight-regular: 400;
 }
 
 html {

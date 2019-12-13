@@ -1,8 +1,9 @@
 import { configure } from '@storybook/react';
 
 function loadStories() {
-  // You can require as many stories as you need.
-  // e.g. require('../stories/index.js');
+  require('../src/components/button/Button.stories.js');
+  require('../src/components/input/Input.stories.js');
+  require('../src/components/autocomplete-list/AutocompleteList.stories.js');
 }
 
 configure(loadStories, module);
